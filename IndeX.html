@@ -24,13 +24,14 @@
 
 body{
 background:linear-gradient(
-to right,#a619f8,
-#00f2fe);
+#a619f8,
+#00fefe, 
+rgb(209, 3, 209));
 }
 
          header,
          .page{
-         min-height:190px;
+         min-height:200px;
          background:dodgerblue;
          text-align: center;
          border-radius:34px ;
@@ -38,15 +39,17 @@ to right,#a619f8,
          border-color:magenta;
          border-style:solid;
          box-shadow:5px 5px 10px black inset;
-         width:200px
-         }
+         width:500px;
+         height:300px;   
+         color:whitesmoke;   
+        }
 
          :root{
           --border-color:linear-gradient(
         to right,      
 
         orange 0%,
-        gold 100%
+        rgb(255, 0, 0) 100%
               )
               ;
         --card-color:#222  ;
@@ -69,6 +72,25 @@ to right,#a619f8,
         height:100%;
         border-radius:12px ;
         }  
+}
+
+*,
+*::before,
+*::after{
+box-sizing:border-box;    
+}
+
+body{
+font-family:system-ui;    
+width:90%;
+margin-inline:auto;
+}
+
+wrapper{
+display:grid;
+grid-template-columns:repeat(4, 1fr);
+gap:1REM ;
+MARGIN-TOP:5rem;
 }
 
          .page{
@@ -100,7 +122,7 @@ to right,#a619f8,
          background:mediumturquoise;    
          color:mediumturquoise ;    
          padding:20px,'1em';    
-         border:5px solid purple ;    
+         border:5px solid rgb(192, 17, 125) ;    
          min-width:100px ;    
          height:140px;
          width:140px;
@@ -146,10 +168,16 @@ to right,#a619f8,
          border-style:4px;
          }
 
+img{
+    max-width:100%;
+    display:block; 
+}
+
+
          .item-1{
          grid-column-start:1 ;    
          grid-column-end:2;    
-         background:violet; 
+         background:rgb(135, 69, 241); 
          height:140px;
          width:140px;
          text-align: center;
@@ -162,7 +190,7 @@ to right,#a619f8,
          padding:20px ;
          grid-column-start:1 ;    
          grid-column-end:2;    
-         background:violet; 
+         background:rgb(134, 69, 255); 
          height:140px;
          width:140px;
          text-align: center;
@@ -174,7 +202,7 @@ to right,#a619f8,
          .item-3{
          grid-column-start:1 ;    
          grid-column-end:2;    
-         background:violet; 
+         background:rgb(135, 71, 219); 
          height:140px;
          width:140px ;
          text-align: center;
@@ -188,7 +216,7 @@ to right,#a619f8,
          padding:20px ;
          grid-column-start:1 ;    
          grid-column-end:2;    
-         background:violet; 
+         background:rgb(135, 78, 189); 
          height:140px;
          width:140px ;
          text-align: center;
@@ -206,8 +234,8 @@ to right,#a619f8,
           --border-color:linear-gradient(
         to right,      
 
-        orange 0%,
-        tomato 100%
+        rgb(255, 102, 0) 0%,
+        rgb(255, 181, 71) 100%
               )
               ;
         --card-color:#222  ;
@@ -236,27 +264,8 @@ to right,#a619f8,
 
     </section>         
 
-    </style>
-    <center><h2 style="color:lightblue"/>
-        .Tecnologías:
-.type/Back end/: java,spring,redis,
-gradle,oracle sql,toomcat y git
 
-</h2></center>
-<center><img src="https://images.app.goo.gl/b3mNMT5k8i4DHMjE7"></center>
-<center><img src="https://images.app.goo.gl/WW1vQGjK1Gcs96sWA"></center>
-<h3></h3>
-<center><h2 style="color:lightblue">.Cloud:
-.conocimientos en las nubes AWS y azure cloud 
-</h2></center>   
-<center><img src="https://images.app.goo.gl/RMVpj4KYNG76LomR8"/></center>
-<center><img src="https://images.app.goo.gl/iPoEhkRZt9SWYEuEA"/></center>
-<h3></h3>
-<center><h2 style="color:lightblue">
-type/Front end/: javaScript,css,html y react
-</h2></center>
-<center><img src="https://images.app.goo.gl/QqpotzruqEuiRduj6"/></center>
-<center><img src="https://images.app.goo.gl/D24mUXPNgCYFybCB9"/></center>
+
 <h3></h3>
 <center><h2  style="color:lightblue">.Idiomas:
 
@@ -270,11 +279,11 @@ type/Front end/: javaScript,css,html y react
 </section>
 
     <center><h2 style="color:lightblue" > .vivo en: argentina,sudamerica </h2></center>
-<center><img src="https://images.app.goo.gl/v9VtedoNzy9xAFTt8"/></center>
+
 <h3></h3>
 <section>        
     <center><h2 style="color:lightblue">mi dedicacion: Back end Dev</h2></center>
-<center><img src="https://images.app.goo.gl/YgtRSRuaepce5Rmr8"</center>    
+ 
 </section>
 <h3></h3>
 <section>
@@ -283,7 +292,7 @@ in/valentino-solano-a1362631a/
    
     Mi github para ver mis proyectos: https://github.com/velentinosolano8987/</h2>
 </center>
-<center><img src="https://github.com/"/></center>
+
 <h3></h3>
 </section>        
 
@@ -297,19 +306,25 @@ in/valentino-solano-a1362631a/
 <center><div class="item item-3">Item 3</div></center>
 <h3></h3>
 <center><div class="item item-4">Item 4</div></center>
+<h4></h4>
 
-<menu></menu>
-
-<div class="content"></div>      
-<h3></h3>
-
-       <center> <header></header>
+       <center><header syle="color:whitesmoke">     
+        .Tecnologías:
+        type/Back end/: java,spring,redis,
+        gradle,oracle sql,toomcat y git  
+        <h1></h1>      
+        Cloud:
+        conocimientos en las nubes AWS y azure cloud    
+        <h1></h1>
+        type/Front end/: javaScript,css,html,angular y react
+    </header></center>
       <h3></h3>
-        <footer></footer></center>
+        <footer></footer>
 
 <center><article class='card'>
     <div class='card-body' style="color:deepskyblue">
-hecho con:     
+hecho con:
+TS,html y css     
        </div>
 </article>     
 </section>
@@ -328,23 +343,21 @@ background:#f8bbd0
 <style>
 h2{
 background:deepskyblue;
-border-with:3px;    
+border-width:3px;    
 border-style:solid;    
 border-radius:40px;
 }    
 
 h1{
 border-style:solid;
-border-with:40px;
-border:radius:40px
+border-width:5px;
+border-radius:40px;
 font-family: system-ui;
-fony-size:3rem;
+font-size:3rem;
 background:linear-
-gradient(90deg, #000);
-color:orange;
--webkit-text-fill-color:
--webkit-background-clip: text;
-    
+gradient(90deg, #000000);
+ color:orange;
+
 }
 </style>    
 
@@ -353,7 +366,15 @@ color:orange;
 <section>
 <h3></h3>
 </section>
+<menu></menu>
 
+<div class="content"></div>      
+<h3></h3>
+<body>
+<div class="wrapper"></div>
+<div class="box"></div>
+
+</body>
 <section>
 
 <div>
